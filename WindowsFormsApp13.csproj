@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0517F45D-AFC7-42FB-AC30-36267CCD4A0B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp13</RootNamespace>
+    <AssemblyName>WindowsFormsApp13</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=8.0.1.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.8.0.1\lib\netstandard2.0\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.8.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.0\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.0\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.8.0.0\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Film.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Istatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Istatistik.Designer.cs">
+      <DependentUpon>Istatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayıtol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayıtol.Designer.cs">
+      <DependentUpon>kayıtol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciForm.Designer.cs">
+      <DependentUpon>KullaniciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiForm.Designer.cs">
+      <DependentUpon>YoneticiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı.cs" />
+    <Compile Include="Premium.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Standart.cs" />
+    <Compile Include="Yonetici.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Istatistik.resx">
+      <DependentUpon>Istatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayıtol.resx">
+      <DependentUpon>kayıtol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciForm.resx">
+      <DependentUpon>KullaniciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="YoneticiForm.resx">
+      <DependentUpon>YoneticiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-user-profile-social-web-others-blue-social-media-desktop-wallpaper-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7549122_user_interface_person_avatar_customer_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4696641_avatar_people_person_profile_user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5172991_internet_lock_locked_padlock_password_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8703726_lock_security_password_locked_protection_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-01-04 132427.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema-296751_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film-162028_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie-4228888_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-1861449_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lady-160472_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-154980_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lady-160472_12801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-1861449_12801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lady-160472_12802.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20210427-113112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charlie-159860_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charlie-159860_12801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20210427-1131121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clapboard-311208_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-154980_12801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20210427-1131122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-154980_12802.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-154980_12803.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8665300_clapperboard_movie_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8665300_clapperboard_movie_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8675198_ic_fluent_movies_and_tv_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6379707.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63797207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1564506_close_exit_logout_power_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6321438_cloud_data_server_storage_succeed_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6321438_cloud_data_server_storage_succeed_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6321451_cloud_database_hosting_networkrefreshicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6321451_cloud_database_hosting_networkrefreshicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\984748_arrows_refresh_reload_update_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6321440_cloud_computing_error_fail_failed_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1289895006-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-literary-atmospheric-movie-market-banner-poster-picture-image_1072077.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-01-06 232742.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211817_search_strong_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211817_search_strongicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211817_search_strong_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1785207_camera_photo_photograph_picture_shooting_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_delete_exit_remove_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barışakarsu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suzume1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emma1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844407_hamburger_list_menu_more_navigation_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1564505_close_delete_exit_remove_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
